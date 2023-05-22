@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./image/T icon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6bb5208a7a.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #19191f;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+
+
+
+        .sddiv {
+            position: absolute;
+            left: auto;
+            top: 20px;
+            display: block;
+            margin: 5vh 5.5%;
+            background-color: #31313a;
+            display: grid;
+            width: 12.5vh;
+            height: 80vh;
+            border-radius: 5px;
+            z-index: 12;
+
+        }
+
+        .a1 {
+            display: block;
+            font-size: 1.4vh;
+            color: whitesmoke;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .a1:hover {
+            color: #ff9800;
+
+        }
+
+        .a2 {
+            display: grid;
+            padding-top: 25%;
+            justify-content: center;
+        }
+
+        .a2:hover {
+            color: #ff9800;
+
+        }
+
+        .icn {
+            margin-left: 4px;
+        }
+
+        .icn:hover {
+            margin-left: 8px;
+        }
+
+        .tr1 {
+            height: 11.4%;
+            width: 100%;
+        }
+
+        .icnsd {
+
+            color: whitesmoke;
+        }
+
+        .mrgnlft {
+            margin-left: 37%;
+        }
+
+        .mrgnlft1 {
+            margin-left: 20%;
+        }
+
+        .spmgn {
+            margin-top: 25%;
+        }
+
+
+
+
+
+        .div1 {
+            position: absolute;
+            z-index: 6;
+            background-color: #31313a;
+            width: 80vh;
+            height: 85vh;
+            margin: 3.5% 12.5%;
+            border-radius: 5px;
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+            box-shadow: -20px -16px 5px rgba(214, 166, 8, 0.164);
+        }
+
+        .mndv {
+            background-image: url(./image/mndvbgimg1.jpg);
+    position: relative;
+    height: 33vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 5;
+        }
+
+
+      
+
+
+        .circleimg {
+            height: 25vh;
+    width: 25vh;
+    margin: 26% 35%;
+    position: absolute;
+    z-index: 8;
+    background-image: url(./image/mypic3.jpg);
+    border-radius: 50%;
+    background-position: top;
+    box-shadow: -10px 8px 5px rgba(165, 98, 35, 0.65);
+    background-size: cover;
+    border: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+        }
+
+        .nme {
+            color: black;
+            text-shadow: 4px 2px 2px #2b2121;
+            text-align: center;
+            padding-top: 17vh;
+            font-size: 225%;
+        }
+
+        .js {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 50%;
+        }
+
+        .js:hover {
+            color: whitesmoke;
+        }
+
+        .divalg {
+            margin-left: 15.5%;
+            margin-top: 3%;
+            display: grid;
+            grid-auto-flow: column;
+        }
+
+        .hwbtn {
+            height: 14%;
+            width: 14%;
+            color: white;
+        }
+
+        .hwbtn:hover {
+
+            color: #ff9800;
+        }
+
+        .btndv {
+            margin-top:6.48vh;
+            display: grid;
+            grid-auto-flow: column;
+            height: 9vh;
+            width: 100%;
+        }
+
+        .btnindv {
+            width: 100%;
+            height: 100%;
+            background-color: #31313a;
+            border: 1px;
+            border-color: #19191f;
+            border-right-style: inset;
+            border-top-style: outset;
+        }
+
+        .btnindv1 {
+            width: 100%;
+            height: 100%;
+            background-color: #31313a;
+            border: 1px;
+            border-color: #19191f;
+            border-top-style: outset;
+        }
+
+        .imgbtn {
+            height: 50%;
+            width: 14%;
+            margin-left: 5%;
+        }
+
+
+        .grd {
+            display: grid;
+        }
+
+        .grd1{
+      
+grid-template-columns: 10% 40% 50%;
+            width: 80vh;
+            height: 82vh;
+        }
+
+
+        .cntme {
+            position: absolute;
+            background-color: #31313a;
+            height: 84%;
+            margin: 4% 54%;
+            width: 43%;
+            color: white;
+            z-index: 3;
+        }
+
+        .h4dv {
+            color: white;
+            padding: 2% 5%;
+        }
+
+        .h4dv1 {
+            color: white;
+            padding: 2% 4%;
+        }
+
+        .h4dv2 {
+            color: white;
+            padding: 2% 2%;
+        }
+
+        .spn1 {
+            color: #ff9800;
+        }
+
+        .spn2 {
+            color: #ffffff8c;
+        }
+
+        .trns1 {
+            height: 50%;
+            width: 90%;
+            margin: 2% 5%;
+
+        }
+
+        h6 {
+            color: #ff9800;
+        }
+
+        .hr1 {
+            width: 90%;
+        }
+
+        .flx1 {
+            display: flex;
+        }
+
+        .spn3 {
+            padding: 4% 0%;
+            font-size: large;
+        }
+
+        .whtsp {
+            color: #ff9800;
+        }
+
+        .whtsp:hover {
+            color: black;
+        }
+
+        .h6 {
+            padding-top: 8%;
+        }
+    </style>
+
+    <title>Tarun's Portfolio CV/Resume</title>
+</head>
+
+<body>
+
+
+    <!--Side Div Bar Start's Here-->
+    <div class="sddiv">
+        <a class="a1" href="#">
+            <div class="tr1 a2"><i class="mrgnlft fa-regular fa-user fa-beat-fade fa-xl"></i><span class="spmgn">ABOUT
+                    ME</span></div>
+        </a>
+        <hr>
+        <a class="a1" href="#">
+            <div class="tr1 a2"><i class="mrgnlft fa-regular fa-file fa-bounce fa-xl"></i><span
+                    class="spmgn">RESUME</span></div>
+        </a>
+        <hr>
+        <a class="a1" href="#">
+            <div class="tr1 a2"><i class="mrgnlft fa-thin fa-magnet fa-beat fa-2xl"></i><span
+                    class="spmgn">OBJECT</span></div>
+        </a>
+        <hr>
+        <a class="a1" href="#">
+            <div class="tr1 a2"><i class="mrgnlft1 fa-solid fa-gear fa-flip fa-xl"></i><span class="spmgn">SKILLS</span>
+            </div>
+        </a>
+        <hr>
+        <a class="a1" href="#">
+            <div class="tr1 a2"><i class="mrgnlft fa-thin fa-microchip fa-beat-fade fa-xl"></i><span
+                    class="spmgn">PROJECTS</span></div>
+        </a>
+        <hr>
+        <a class="a1" href="#">
+            <div class="tr1 a2"><i class="mrgnlft fa-solid fa-phone fa-shake fa-xl"></i><span class="spmgn">CONTACT
+                    ME</span></div>
+        </a>
+
+    </div>
+    <!--Side Div Bar End's Here-->
+
+
+
+
+
+
+    <!--MAin Div By Grid-->
+    <div class="grd">
+
+
+
+
+
+        <!-- Center Div Starts Here-->
+        <div class="div1">
+            <a href="#">
+                <div class="circleimg">
+                </div>
+            </a>
+            <div class="mndv">
+            </div>
+            <!-- Center Div Background image and Circle Image End's Here-->
+
+            <div>
+                <h1 class="nme">TARUN RAI<br>
+                    <a href="" class="typewrite js" data-period="2000"
+                        data-type='[ "WEB DESIGNER", "PROGRAMMER", "CODER"]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+                <!-- Js Code End's Here -->
+
+
+                <span class="divalg">
+                    <a href="#"><i class="hwbtn fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="#"><i class="hwbtn fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="#"><i class="hwbtn fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="#"><i class="hwbtn fa-solid fa-envelope fa-xl"></i></a>
+                </span>
+
+                <!-- Center Div Social's Icon End's Here-->
+           
+
+
+            <span class="btndv">
+                <button class="btnindv"><a class="a1" href="#">DOWNLOAD CV <i
+                            class="icn fa-solid fa-download fa-beat"></i></a></button>
+                <button class="btnindv1"><a class="a1" href="#">CONTACT ME <i
+                            class="icn fa-brands fa-telegram fa-xl"></i></a></button>
+                </snap>
+            <!-- Center Div Buttons End's Here-->
+
+        </div>
+    </div>
+    <!-- Center Div End's Here-->
+
+
+    <!-- About Me Div Start's Here-->
+    <div class="abtus">
+
+
+
+
+    </div>
+
+
+
+    <!-- CONTACT ME Div Start's Here-->
+    <div class="cntme">
+
+        <h5 class="h4dv"><span class="spn1">C</span>ONTACT ME</h5>
+        <hr class="hr1">
+        <div>
+            <iframe class="trns1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.958216094903!2d77.33639631530194!3d23.280967912462536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb6147de715d76c1!2zMjPCsDE2JzUxLjUiTiA3N8KwMjAnMTguOSJF!5e0!3m2!1sen!2sin!4v1669900271017!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Map Added Here-->
+        <div class="grd flx1">
+
+            <div class="h4dv1">
+                <h6>E-Mail : <span class="spn2">Tarunraikhs1122@gmail.com</span></h6>
+                <h6>Phone No. : <span class="spn2">+919753132960</span></h6>
+            </div>
+            <div class="h4dv2">
+                <h6>Freelancer : <span class="spn2">Available</span></h6>
+                <h6>ADDRESS : <span class="spn2">Bhopal,MP,India</span></h6>
+            </div>
+
+        </div>
+        <div>
+            <h5 class="h4dv">To Contact Me on Whatsapp</h5>
+            <hr class="hr1">
+            <div class="h4dv1">
+                <h4>
+                    <span class="spn3">To Contact on Whatsapp : </span>
+                    <a href="https://wa.me/+919753132960" target="_blank"><i
+                            class="whtsp fa-brands fa-whatsapp fa-flip fa-2xl"></i></a>
+                </h4>
+                <h6 class="h6">Whatsapp No. : <span class="spn2">+919753132960</span></h6>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</body>
+
+<script>
+    var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+
+
+</html>
