@@ -14,956 +14,189 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6bb5208a7a.js" crossorigin="anonymous"></script>
-</head>
+  <style>
 
-<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
     body {
-        background-color: #19191f;
-        margin: 0;
+      background-color: #26262d;
+      overflow: hidden;
+      margin: 0;
         height: 100%;
         width: 100%;
     }
-
-    .sddiv {
-        position: fixed;
-        left: 10%;
-        top: 20px;
-        display: block;
-        margin: 5vh 5.5%;
-        background-color: #31313a;
-        display: grid;
-        width: 12.5vh;
-        height: 80vh;
-        border-radius: 5px;
-        z-index: 12;
-
+    .object {
+      position: absolute;
+      background-color:white;
+      opacity: 0.05;
+      width: 100px;
+      height: 100px;
     }
-
-    .a1 {
-        display: block;
-        font-size: 1.4vh;
-        color: whitesmoke;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .a11 {
-        display: block;
-        font-size: 15px;
-        color: whitesmoke;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .a11:hover {
-        color: #ff9800;
-
-    }
-
-    .a1:hover {
-        color: #ff9800;
-
-    }
-
-    .a2 {
-        display: grid;
-        padding-top: 25%;
-        justify-content: center;
-    }
-
-    .a2:hover {
-        color: #ff9800;
-
-    }
-
-    .tr1 {
-        height: 11.4%;
-        width: 100%;
-    }
-
-    .mrgnlft {
-        margin-left: 37%;
-    }
-
-    .mrgnlft1 {
-        margin-left: 20%;
-    }
-
-    .spmgn {
-        margin-top: 25%;
-    }
-
-
-    .div1 {
-        position: relative;
-        z-index: 6;
-        background-color: #31313a;
-        width: 50%;
-        height: 92%;
-        margin: 3.5% 22.5%;
-        border-radius: 5px;
-        border: 1px;
-        border-color: black;
-        border-style: solid;
-        box-shadow: -20px -16px 5px rgba(214, 166, 8, 0.164);
-    }
-
-
-
-    .mndv {
-        background-image: url(./image/mndvbgimg1.jpg);
-        position: relative;
-        height: 36vh;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        z-index: 5;
-    }
-
-
-
-
-
-    .circleimg {
-        height: 30%;
-        width: 28%;
-        margin: 20% 35%;
-        position: absolute;
-        z-index: 8;
-        background-image: url(./image/mypic3.jpg);
-        border-radius: 50%;
-        background-position: top;
-        box-shadow: -10px 8px 5px rgba(165, 98, 35, 0.65);
-        background-size: cover;
-        border: 5px;
-        border-style: solid;
-        border-color: #ffffff;
-    }
-
-    .nme {
-        color: black;
-        text-shadow: 4px 2px 2px #2b2121;
-        text-align: center;
-        padding-top: 17vh;
-        font-size: 225%;
-    }
-
-    .js {
-        color: #ff9800;
-        text-decoration: none;
-        font-size: 50%;
-    }
-
-    .js:hover {
-        color: whitesmoke;
-    }
-
-    .divalg {
-        margin-left: 15.5%;
-        margin-top: 5%;
-        display: grid;
-        grid-auto-flow: column;
-    }
-
-    .hwbtn {
-        height: 14%;
-        width: 14%;
-        color: white;
-    }
-
-    .hwbtn:hover {
-
-        color: #ff9800;
-    }
-
-    .btndv {
-        margin-top: 4%;
-        display: grid;
-        grid-auto-flow: column;
-        height: 9vh;
-        width: 100%;
-    }
-
-    .btnindv {
-        width: 100%;
-        height: 100%;
-        background-color: #31313a;
-        border: 1px;
-        border-color: #19191f;
-        border-right-style: inset;
-        border-top-style: outset;
-    }
-
-    .btnindv1 {
-        width: 100%;
-        height: 100%;
-        background-color: #31313a;
-        border: 1px;
-        border-color: #19191f;
-        border-top-style: outset;
-    }
-
-    .imgbtn {
-        height: 50%;
-        width: 14%;
-        margin-left: 5%;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    .abtme {
-        background-color: #31313a;
-        height: 90%;
-        margin: 2.5% 22.5%;
-        width: 50%;
-        color: white;
-        z-index: 3;
-    }
-
-    .padding {
-        margin-left: 8%;
-    }
-
-    .hr {
-        width: 100%;
-        margin-top: 12%;
-        color: rgb(230 235 241);
-
-
-    }
-
-    .about {
-        color: aliceblue;
-        font-size: -webkit-xxx-large;
-        font-weight: 700;
-    }
-
-    .story {
-
-        margin-top: 5%;
-        font-size: medium;
-        font-weight: 900;
-        color: #ff9800;
-    }
-
-    .aboutfont {
-        color: aliceblue;
-        font-size: mediums;
-        font-weight: 600;
-        text-align: start;
-        margin-right: 10%;
-        margin-top: 7%;
-    }
-
-    .element2 {
-        margin-top: 3%;
-        margin-left: 50px;
-    }
-
-    .element1 {
-        margin-top: 3%;
-    }
-
-    .licolour {
-        color: #ff9800;
-        font-size: medium;
-        font-weight: 900;
-
-    }
-
-    .licolour2 {
-        color: aliceblue;
-        font-size: medium;
-        font-weight: 900;
-    }
-    .spn5{
-        color: #ff9800;
-    }
-    .aml{
-        text-decoration: none;
-        color:#ffffff8c;
-    }
-    .aml:hover{
-        color: #ffffff8c;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    .Reesume{
-        background-color: #31313a;
-        height: 90%;
-        margin: 2.5% 22.5%;
-        width: 50%;
-        color: white;
-        z-index: 3;
-    }
-    .yeear{
-        border: 1px solid #53535e;
-        width: max-content;
-        margin-left: 5.5%;
-    }
-    .betncf{
-        background-color: #ff9800;
-        color: black;
-        font-weight: bold;
-    }
-    .devsd{
-        padding-left: 5rem;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    .Skills{
-        background-color: #31313a;
-        height: 90%;
-        margin: 2.5% 22.5%;
-        width: 50%;
-        color: white;
-        z-index: 3;
-    }
-    .dot2 {
-            height: 13px;
-            width: 13px;
-            background-color:#ff9800;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .dot {
-            height: 13px;
-            width: 13px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .devsd1{
-        padding: 0.5rem 5rem;
-    }
-
-
-
-
-
-
-
-
-    .Project{
-        background-color: #31313a;
-        height: 90%;
-        margin: 2.5% 22.5%;
-        width: 50%;
-        color: white;
-        z-index: 3;
-    }
-    .imghw1{
-height: 20%;
-width: 60%;
-    }
-    .imghw2{
-width: 85%;
-    }
-    .ahref{
-        text-decoration: none;
-        color: #ff9800;
-    }
-    .ahref:hover{
-        color: white;
-    }
-.mrgnh4{
-    margin: 2% 5%;
+     
+    .sidebaractive {
+    transform: translate(0%) !important;
 }
-.mrgnh41{
-    margin: 2% 25%;
+.sidebar {
+    width: 250px;
+    background: black;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    padding: 20px;
+    box-sizing: border-box;
+    left: 0;
+    transform: translate(-100%);
+    transition: all 0.3s linear 0s;;
 }
-.rflnk{
+
+@media (max-width: 700px) {
+            .sidebar {
+            width: 180px;
+            background: black;
+            height: 100%;
+            z-index: 4;
+            position: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+            left: 0;
+            transform: translate(-100%);
+            transition: all 0.3s linear 0s;;
+        }
+    }
+        
+
+ul.nav-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+}
+ul.nav-links li a {
+    color: White;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: inline-block;
     text-decoration: none;
-        color: white;
 }
-.rflnk:hover{
-        color:#ff9800;
-    }
-.spn11{
+ul.nav-links li a:hover{
     color: #ff9800;
 }
-.spn11:hover{
-    color: white;
+ul.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:40px
+}
+ul.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+}
+ul.social-links li:hover{
+    background: black;
+}
+ul.social-links li a {
+    color: black;
+}
+ul.social-links li a:hover{
+    color: #ff9800;
+}
+.nav-header {
+   margin-left: 90%;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
+@media (min-width: 300px) {
+    .nav-header {
+   margin-left: 88%;
+    margin-top: 10%;
+    font-size: 30px;
+    cursor: pointer;
+}
+    }
+    @media (min-width: 570px) {
+    .nav-header {
+   margin-left: 90%;
+   margin-top:2%;
+    font-size: 30px;
+    cursor: pointer;
+}
+    }
+    @media (min-width: 1000px) {
+    .nav-header {
+   margin-left: 95%;
+   margin-top: 3%;
+    font-size: 30px;
+    cursor: pointer;
+}}
 
+.closebtn {
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    top: 0px;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 570px) {
+.mlxs{
+    margin-left: 15%;
+}
+}
+@media (max-width: 100px) {
+.mlxs{
+    margin-left: 35%;
+}
+}
+.btnsbr{
+    color: white;
+}
+.btnsbr:hover{
+    color:#ff9800;
+}
+        </style>
+        <body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="container-fluid">
     
-    .cntme {
-        position: absolute;
-        background-color: #31313a;
-        height: 95%;
-        margin: 2.5% 22.5%;
-        width: 50%;
-        color: white;
-        z-index: 3;
-    }
+        <div class="row">
 
-    .grd {
-        display: grid;
-    }
-
-    .grd1 {
-
-        grid-template-columns: 10% 40% 50%;
-        width: 80vh;
-        height: 82vh;
-    }
-
-
-    .h4dv {
-        color: white;
-        padding: 2% 5%;
-    }
-
-    .h4dv1 {
-        color: white;
-        padding: 2% 4%;
-    }
-
-    .h4dv2 {
-        color: white;
-        padding: 2% 2%;
-    }
-
-    .spn1 {
-        color: #ff9800;
-    }
-
-    .spn2 {
-        color: #ffffff8c;
-    }
-
-    .trns1 {
-        height: 50%;
-        width: 90%;
-        margin: 2% 5%;
-
-    }
-
-    h6 {
-        color: #ff9800;
-    }
-
-    .hr1 {
-        width: 90%;
-    }
-
-    .flx1 {
-        display: flex;
-    }
-
-    .spn3 {
-        padding: 4% 0%;
-        font-size: large;
-    }
-
-    .whtsp {
-        color: #ff9800;
-    }
-
-    .whtsp:hover {
-        color: black;
-    }
-
-    .h6 {
-        padding-top: 8%;
-    }
-
-</style>
-
-<body>
-
-
-    <!--Side Div Bar Start's Here-->
-    <div class="sddiv">
-
-        <a class="a1" href="#hme">
-            <div class="tr1 a2"><i class="mrgnlft1 fa-solid fa-house fa-beat fa-xl"></i><span class="spmgn">Home</span>
-            </div>
-        </a>
-        <hr>
-        <a class="a1" href="#abtme">
-            <div class="tr1 a2"><i class="mrgnlft fa-regular fa-user fa-beat-fade fa-xl"></i><span class="spmgn">ABOUT
-                    ME</span></div>
-        </a>
-        <hr>
-        <a class="a1" href="#Resume">
-            <div class="tr1 a2"><i class="mrgnlft fa-regular fa-file fa-bounce fa-xl"></i><span
-                    class="spmgn">RESUME</span></div>
-        </a>
-        <hr>
-
-        <a class="a1" href="#Skils">
-            <div class="tr1 a2"><i class="mrgnlft1 fa-solid fa-gear fa-flip fa-xl"></i><span class="spmgn">SKILLS</span>
-            </div>
-        </a>
-        <hr>
-        <a class="a1" href="#Prjct">
-            <div class="tr1 a2"><i class="mrgnlft fa-thin fa-microchip fa-beat-fade fa-xl"></i><span
-                    class="spmgn">PROJECTS</span></div>
-        </a>
-        <hr>
-        <a class="a1" href="#cnt1">
-            <div class="tr1 a2"><i class="mrgnlft fa-solid fa-phone fa-shake fa-xl"></i><span class="spmgn">CONTACT
-                    ME</span></div>
-        </a>
-
+           <div class="nav-header">
+            <i class="btnsbr fa-solid fa-bars"></i>
     </div>
-    <!--Side Div Bar End's Here-->
 
-
-
-
-    <!-- Center Div Starts Here-->
-    <div class="div1" id="hme">
-        <a href="#abtme">
-            <div class="circleimg">
-            </div>
-        </a>
-        <div class="mndv">
-        </div>
-        <!-- Center Div Background image and Circle Image End's Here-->
-
-        <div>
-            <h1 class="nme">TARUN RAI<br>
-                <a href="" class="typewrite js" data-period="2000" data-type='[ "WEB DESIGNER", "PROGRAMMER", "CODER"]'>
-                    <span class="wrap"></span>
-                </a>
-            </h1>
-            <!-- Js Code End's Here -->
-
-
-            <span class="divalg">
-                <a href="https://wa.me/+919753132960" target="_blank"><i
-                        class="hwbtn fa-brands fa-whatsapp fa-xl"></i></a>
-                <a href="https://www.instagram.com/tarun___rai?r=nametag" target="_blank"><i
-                        class="hwbtn fa-brands fa-instagram fa-xl"></i></a>
-                <a href="https://twitter.com/Tarun270699?t=emZqfHwfhBwkoUV-iPpmCQ&s=09" target="_blank"><i
-                        class="hwbtn fa-brands fa-twitter fa-xl"></i></a>
-                <a href="mailto:tarunraikhs1122@gmail.com" target="_blank"><i
-                        class="hwbtn fa-solid fa-envelope fa-xl"></i></a>
-            </span>
-
-            <!-- Center Div Social's Icon End's Here-->
-
-
-
-            <span class="btndv">
-                <button class="btnindv"><a class="a11" href="#">DOWNLOAD CV <i
-                            class="icn fa-solid fa-download fa-beat"></i></a></button>
-                <button class="btnindv1"><a class="a11" href="https://t.me/Tarun_rai" target="_blank">CONTACT ME <i
-                            class="icn fa-brands fa-telegram fa-xl"></i></a></button>
-                </snap>
-                <!-- Center Div Buttons End's Here-->
-
-        </div>
-    </div>
-    <!-- Center Div End's Here-->
-
-
-
-
-    <!-- About Me Div Start's Here-->
-    <div class="abtme" id="abtme">
-
-
-        <div>
-
-            <h1 class="about h4dv"><span class="spn1">A</span>bout ME</h1>
-            <hr class="hr1">
-
-            <p class="aboutfont h4dv1">Hello! I’m <span class="spn5"> TARUN RAI</span>.
-                Web designer from India, MP. I have rich experience in web site design and building, also I am
-                good at Front and Back End Technology. <br><br> My expertise lies in <span class="spn5">front-end development</span>, where I
-                excel in<span class="spn5"> HTML, CSS, and JavaScript</span>.I pay meticulous
-                attention to detail and strive for pixel-perfect implementations while ensuring cross-browser
-                compatibility and accessibility.<br><br>
-
-                In addition to my front-end skills, I have a solid understanding of back-end technologies, including<span class="spn5"> Node.js,
-                ,React.js,Express.js,Sql,MongoDB</span>. This enables me to create seamless integrations, develop interactive
-                features, and build robust web applications..</p>
-
-            <div class="h4dv1" style="display: inline-flex;">
-
-                <ul class="element1">
-                    <li> <strong> <span class="licolour"> Age: </span> </strong> <span class="licolour2"> 23
-                        </span>
-                    </li>
-                    <li> <strong> <span class="licolour"> Residence: </span> </strong> <span class="licolour2">
-                            INDIA </span></li>
-                    <li> <strong> <span class="licolour"> Freelance: </span> </strong> <span class="licolour2">
-                            Available </span></li>
-                </ul>
-                <ul class="element2">
-                    <li> <strong> <span class="licolour"> Address: </span> </strong> <span class="licolour2">
-                            BHOPAL
-                        </span></li>
-                    <li> <strong> <span class="licolour"> Phone: </span> </strong> <span class="licolour2">
-                            +91
-                            9753132960 </span></li>
-                    <li> <strong> <span class="licolour"> E-mail: </span> </strong> <span class="licolour2">
-                            Tarunraikhs1122@gmail.com </span></li>
-                </ul>
-            </div>
-        </div>
-
-        <hr class="hr">
-
-
-
-    </div>
-    <!-- About Me Div End's Here-->
-
-
-
-
-
-
-
-
-
-    <!-- Resume Div Start's Here-->
-    <div class="Reesume" id="Resume">
-        <h1 class="about h4dv"><span class="spn1">R</span>esume</h1>
-        <hr class="hr1">
-        <div class="h4dv">
-        <h5 class="h4dv"><span class="spn1">E</span>ducation</h5>
-
-        <div class="d-flex flex-row">
-            <div class="p-2"><div class="yeear">2017-2020</div><br>
-            <h5>Bachelor's Degree in Computer Application IES Collage,Bhopal,India</h5><br>
-            <input class="betncf" type="button" value="Certificate"></div>
-            <div class="p-2"><div class="yeear">2021-2023</div><br>
-            <h5>Master's Degree in Computer Application RGPV University,Bhopal,India</h5><br>
-            <input class="betncf" type="button" value="Certificate"></div>
-          </div><br>
-          <hr class="hr1">
-          
-
-
+    <div class="sidebar ">
         
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Resume</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
 
-          <h5 class="h4dv"><span class="spn1">P</span>rogramming Course</h5>
-        <div class="d-flex flex-row">
-            <div class="p-2"><div class="yeear">2022-2023</div><br>
-            <h4>Front-End</h4>
-            <h5>Coursework - Html 5,  CSS 3, Javascript 6.</h5>
-            </div>
-            <div class="devsd"><div class="yeear">2022-2023</div><br>
-            <h4>Back-End</h4>
-            <h5>Coursework - Express,React,Node JS, MongoDB,SQL,Github</h5>
-          </div>
-<br><br>
-        </div>
-    </div><hr class="hr">
+        <ul class="social-links justify-content-around">
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li class="offset-md-5 mlxs"><a href=""><i class="fa fa-twitter"></i></a></li><br><br><br>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li class="offset-md-5 mlxs"><a href=""><i class="fa fa-linkedin"></i></a></li>
+        </ul>
     </div>
-    <!-- Resume Div End's Here-->
-
-
-
-
-
-
-
-
-
-    <!-- Skills Div Start's Here-->
-    <div class="Skills" id="Skils">
-        <h1 class="about h4dv"><span class="spn1">S</span>kills</h1>
-        <hr class="hr1">
-        <div class="h4dv">
-        <h4 class="h4dv"><span class="spn1">L</span>anguages <br>Skills</h4><br><br>
-
-        <div class="d-flex flex-row">
-            <div class="p-2"><h3>Hindi :  <div>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot"></span>
-            </div></h3>
-            
-            </div>
-
-            <div class="devsd1"><h3>English :  <div>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-
-            </div></h3>
-                </div>
-          </div><br>
-          <hr class="hr1">
-          
-
-
-        
-
-          <h5 class="h4dv"><span class="spn1">C</span>oding Skills</h5>
-        <div class="d-flex flex-row">
-            <div class="p-2"><div class="yeear">2022-2023</div><br>
-            <h4>Front-End</h4>
-            <h5>Coursework - Html 5,  CSS 3, Javascript 6.</h5>
-            </div>
-            <div class="devsd"><div class="yeear">2022-2023</div><br>
-            <h4>Back-End</h4>
-            <h5>Coursework - Express,React,Node JS, MongoDB,SQL,Github</h5>
-          </div>
-<br><br>
-        </div>
-    </div><hr class="hr">
-    </div>
-    <!-- Skills Div End's Here-->
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Project Div Start's Here-->
-    <div class="Project" id="Prjct">
-        <h1 class="about h4dv"><span class="spn1">P</span>rojects</h1>
-        <hr class="hr1">
-
-        <h5 class="h4dv"><a class="rflnk" href="https://github.com/Tarunrai9753" target="_blank"><span class="spn11"> Github Link</span> = https://github.com/Tarunrai9753</a></h5>
-        <hr class="hr1">
-
-
-        <div class="h4dv">
-        <h5 class="h4dv2"><span class="spn1">Demo W</span>ebsites For Desktop</h5>
-
-        <div class="d-flex flex-row">
-            <div class="p-2">
-                <a class="ahref" href="#"> <div>
-                <img class="imghw1" src="./image/scl.jpg" alt="Desktop">
-            </div>
-            <h4 class="mrgnh4">Social Websites</h4></a>
-
-            </div>
-
-
-            <div class="p-2">
-                <a class="ahref" href="#"><div>
-                <img class="imghw2" src="./image/gmes.avif" alt="Games icon">
-            </div>
-            <h4 class="mrgnh41">Games</h4></a>
-            </div>
-
-            </div>
-          <hr class="hr1">
-
-
-           <div class="d-flex flex-row">
-            <div class="p-2">
-                <a class="ahref" href="#"> <div>
-                <img class="imghw1" src="./image/desktop.jpg" alt="Desktop">
-            </div>
-            <h4 class="mrgnh4">Desktop Sites</h4></a>
-
-            </div>
-
-
-            <div class="p-2">
-                <a class="ahref" href="#"><div>
-                <img class="imghw2" src="./image/apps.jpg" alt="Games icon">
-            </div>
-            <h4 class="mrgnh41">Applications</h4></a>
-            </div>
-
-            </div>
-        
-        </div><hr class="hr1">
-        
-        </div>
-          
-
-
-        
-
-          
-   
-
-
-
-
-    </div>
-    <!-- Project Div End's Here-->
-
-
-
-
-
-
-    <!-- CONTACT ME Div Start's Here-->
-    <div class="cntme" id="cnt1">
-
-        <h1 class="about h4dv"><span class="spn1">C</span>ontact ME</h1>
-        <hr class="hr1">
-        <div>
-            <iframe class="trns1"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.958216094903!2d77.33639631530194!3d23.280967912462536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb6147de715d76c1!2zMjPCsDE2JzUxLjUiTiA3N8KwMjAnMTguOSJF!5e0!3m2!1sen!2sin!4v1669900271017!5m2!1sen!2sin"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <!-- Map Added Here-->
-        <div class="grd flx1">
-
-            <div class="h4dv1">
-                <h6>E-Mail : <span class="spn2"><a class="aml" href="mailto:tarunraikhs1122@gmail.com" target="_blank">Tarunraikhs1122@gmail.com</a></span></h6>
-                <h6>Phone No. : <span class="spn2">+919753132960</span></h6>
-            </div>
-            <div class="h4dv2">
-                <h6>Freelancer : <span class="spn2">Available</span></h6>
-                <h6>ADDRESS : <span class="spn2">Bhopal,MP,India</span></h6>
-            </div>
-
-        </div>
-        <div>
-            <h5 class="h4dv">To Contact Me on Whatsapp</h5>
-            <hr class="hr1">
-            <div class="h4dv1">
-                <h4>
-                    <span class="spn3">To Contact on Whatsapp : </span>
-                    <a href="https://wa.me/+919753132960" target="_blank"><i
-                            class="whtsp fa-brands fa-whatsapp fa-flip fa-2xl"></i></a>
-                </h4>
-                <h6 class="h6">Whatsapp No. : <span class="spn2">+919753132960</span></h6>
-            </div>
-            <hr class="hr">
-            
-        </div></div>
-
-
-
-
-
-
-
-
-</body>
-
-<script>
-    var TxtType = function (el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function () {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-        }
-
-        setTimeout(function () {
-            that.tick();
-        }, delta);
-    };
-
-    window.onload = function () {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-                new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-</script>
-
+        </div></div></body>
+            <script src="./sdbar.js">
+            </script>
+            <script src="./bg animation bubbles.js"></script>
 </html>
